@@ -1,0 +1,3 @@
+"""SyncPath network resilience laboratory."""
+
+__version__ = "0.1.0"
