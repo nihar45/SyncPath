@@ -1,0 +1,19 @@
+{
+  "deadline_ms": 12000,
+  "timeout_ms": 300,
+  "max_retries": 5,
+  "retry_delay_ms": 180,
+  "operations": [
+    {"id":"checkin-01","scheduled_at_ms":100,"payload":"check-in"},
+    {"id":"checkin-02","scheduled_at_ms":650,"payload":"check-in"},
+    {"id":"checkin-03","scheduled_at_ms":1400,"payload":"check-in"},
+    {"id":"checkin-04","scheduled_at_ms":2400,"payload":"check-in"},
+    {"id":"checkin-05","scheduled_at_ms":4500,"payload":"check-in"}
+  ],
+  "windows": [
+    {"start_ms":0,"end_ms":1000,"available":true,"latency_ms":80,"packet_loss":0.0,"label":"wifi"},
+    {"start_ms":1000,"end_ms":3500,"available":false,"latency_ms":0,"packet_loss":0,"label":"handoff"},
+    {"start_ms":3500,"end_ms":7000,"available":true,"latency_ms":180,"packet_loss":0.2,"label":"cellular"},
+    {"start_ms":7000,"end_ms":12000,"available":true,"latency_ms":75,"packet_loss":0.0,"label":"wifi-restored"}
+  ]
+}
