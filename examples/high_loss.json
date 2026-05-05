@@ -1,0 +1,15 @@
+{
+  "deadline_ms": 8000,
+  "timeout_ms": 180,
+  "max_retries": 4,
+  "retry_delay_ms": 120,
+  "operations": [
+    {"id":"write-A","scheduled_at_ms":300,"payload":"record-A"},
+    {"id":"write-B","scheduled_at_ms":1100,"payload":"record-B"},
+    {"id":"write-C","scheduled_at_ms":2100,"payload":"record-C"}
+  ],
+  "windows": [
+    {"start_ms":0,"end_ms":4000,"available":true,"latency_ms":90,"packet_loss":0.45,"label":"weak-cell"},
+    {"start_ms":4000,"end_ms":8000,"available":true,"latency_ms":60,"packet_loss":0.12,"label":"stable-cell"}
+  ]
+}
