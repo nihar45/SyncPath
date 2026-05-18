@@ -1,0 +1,3 @@
+# SyncPath has no third-party runtime dependencies.
+# Install the application from its pyproject.toml:
+-e .
